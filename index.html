@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Playbook Sesión 6.5 3º Secundaria</title>
+    <title>Playbook-S3-M6.5</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -11,7 +11,7 @@
 <body>
 
     <header>
-        <h1><span class="book-icon">📋</span> <strong>Playbook Sesión 6.5 3º Secundaria</strong></h1>
+        <h1><span class="book-icon">📋</span> <strong>Playbook Misión 6.5: La Alerta de Invernadero</strong></h1>
         <div class="header-widgets">
             <div class="timer-container">
                 <span id="timer">⏱️ 00:00</span>
@@ -38,7 +38,6 @@
                 <li><a href="#activity-2">2</a></li>
                 <li><a href="#activity-3">3</a></li>
                 <li><a href="#activity-4">4</a></li>
-                <li><a href="#activity-5">5</a></li>
             </ul>
 
             <div class="sidebar-info">
@@ -54,7 +53,7 @@
 
             <button id="toggle-dialogues">Mostrar todos los diálogos</button>
 
-            <!-- SECCIÓN "DE UN VISTAZO" (ANTES ACTIVITY-0) -->
+            <!-- SECCIÓN "DE UN VISTAZO" -->
             <div class="activity-card" id="activity-0">
                 <h2><span class="book-icon">📝</span> De un Vistazo: Sesión Gnius</h2>
                 <p class="overview-subtitle">Resumen rápido de objetivos, materiales y preparación para el facilitador.</p>
@@ -62,7 +61,7 @@
                     <table>
                         <thead>
                             <tr>
-                                <th style="width: 50%;">Objetivos, Tácticas y Entregable</th>
+                                <th style="width: 50%;">Objetivos, Secuencia y Entregable</th>
                                 <th style="width: 50%;">Materiales Específicos y Preparación Previa</th>
                             </tr>
                         </thead>
@@ -71,59 +70,42 @@
                                 <td>
                                     <strong>Objetivos:</strong>
                                     <ul>
-                                        <li>Que los estudiantes apliquen su conocimiento del sensor BME280 para diseñar e implementar un sistema de alerta local en su Micro:bit (IOTbit).</li>
-                                        <li>Que sean capaces de definir y programar umbrales numéricos para temperatura y humedad que activen una retroalimentación inmediata (sonido o luz).</li>
-                                        <li>Que conceptualicen la importancia de las alertas locales en la toma de decisiones autónoma y la aplicación práctica de umbrales como base para sistemas de control basados en reglas, complementando el monitoreo en la nube.</li>
+                                        <li>Que los estudiantes apliquen su conocimiento del sensor BME280 y la lógica condicional para construir un sistema de alerta autónomo.</li>
+                                        <li>Que diseñen e implementen un programa que active una alarma local cuando las condiciones ambientales superen umbrales predefinidos.</li>
+                                        <li>Que refuercen la aplicación práctica de la toma de decisiones basada en datos de sensores (Edge Computing).</li>
                                     </ul>
                                     <strong>Secuencia de Clase:</strong>
                                     <ul>
-                                        <li><strong class="tactic-highlight">⚡A.I. GYM:</strong> Análisis profundo y contextualización de la misión con Xolo.</li>
-                                        <li><strong class="tactic-highlight">⚡VIBE CODING:</strong> Diseño de la intención y generación de código por IA.</li>
-                                        <li><strong class="tactic-highlight">⚡ANÁLISIS DE CÓDIGO:</strong> Lectura y comprensión guiada del código generado ("Taming the Genie").</li>
-                                        <li><strong class="tactic-highlight">⚡IMPLEMENTACIÓN Y DEBUGGING:</strong> Pruebas de hardware/software y depuración colaborativa con Xolo.</li>
-                                        <li><strong class="tactic-highlight">⚡GNIUS STORM:</strong> Showcase de proyectos, síntesis de "insights" y reflexión iterativa.</li>
+                                        <li><strong class="tactic-highlight">⚡REPASO ESTRATÉGICO:</strong> Repaso conceptual guiado por IA sobre Edge Computing y lógica de umbrales.</li>
+                                        <li><strong class="tactic-highlight">⚡BRAIN SPARK (DESAFÍO):</strong> Diseño, Vibe Coding, análisis y depuración de un sistema de alerta local.</li>
+                                        <li><strong class="tactic-highlight">⚡GNIUS STORM:</strong> Showcase de proyectos y reflexión sobre el diseño de sistemas autónomos.</li>
                                     </ul>
                                     <strong>Entregable Clave:</strong>
                                     <ul>
-                                        <li>Un Micro:bit con IOTbit y sensor BME280 programado para activar una alerta local (sonido/luz) cuando la temperatura o humedad superan umbrales predefinidos, demostrando control autónomo basado en reglas.</li>
+                                        <li>Un sistema de alerta funcional que utiliza el sensor BME280 y activa una salida (LED) basándose en umbrales de temperatura y/o humedad definidos en el código.</li>
+                                        <li>Evidencia del uso de la función `print()` para depurar y verificar los valores del sensor durante el desarrollo.</li>
                                     </ul>
                                 </td>
                                 <td>
                                     <strong>Materiales Específicos:</strong>
                                     <ul>
                                         <li>Proyector o pantalla interactiva.</li>
-                                        <li>Conexión a internet estable y de buena velocidad.</li>
-                                        <li>Cuentas de alumno para ThingSpeak (SmartIOT.space).</li>
+                                        <li>Conexión a internet estable.</li>
+                                        <li>Acceso a MakeCode (<a href="https://makecode.microbit.org/" target="_blank">https://makecode.microbit.org/</a>) en modo Python.</li>
                                         <li>Chat "Agente Gnius" (Xolo) operativo.</li>
-                                        <li>Presentación de diapositivas (Diapositivas 1-10).</li>
-                                        <li>1 Micro:bit v2 con placa IOTbit y cable USB por equipo de 2 estudiantes.</li>
-                                        <li>1x sensor BME280 por equipo.</li>
-                                        <li>1x buzzer por equipo.</li>
-                                        <li>Archivo de librería `bme280_i2c.py` (para MakeCode/MicroPython).</li>
-                                        <li>Elementos para simular cambios ambientales: secador de pelo, vaso con hielo, ventilador pequeño (opcional).</li>
+                                        <li>Presentación de diapositivas (Diapositivas 1-7).</li>
+                                        <li>Por equipo de 2: 1 Micro:bit v2 con placa IOTbit, 1 sensor BME280, y cables de conexión.</li>
                                     </ul>
                                     <strong>Preparación Previa para ESTA Sesión:</strong>
                                     <ol>
-                                        <li><strong>Revisión del Entorno Digital y Físico (Interna):</strong>
+                                        <li><strong>Verificación del Entorno Digital y Físico (Interna):</strong>
                                             <ul>
-                                                <li>Verificar conexión a internet y funcionamiento de MakeCode (Python editor).</li>
-                                                <li>Tener kits Micro:bit v2 con IOTbit, sensores BME280 y buzzers listos.</li>
-                                                <li>Asegurarse de que el archivo `bme280_i2c.py` esté disponible para cargar en los Micro:bits.</li>
-                                                <li>Tener la presentación de diapositivas (1-10) lista y en orden.</li>
-                                                <li>Probar el chat "Agente Gnius" (Xolo) para asegurar su operatividad.</li>
+                                                <li>Asegurar que los sensores BME280 y LEDs de la IOTbit funcionan correctamente.</li>
+                                                <li>Verificar la funcionalidad del chat de Xolo y tener cargada la presentación.</li>
                                             </ul>
                                         </li>
-                                        <li><strong>Familiarización Conceptual y Técnica:</strong>
-                                            <ul>
-                                                <li>Revisar el flujo de esta sesión, enfocándose en el concepto de umbrales, alertas locales, toma de decisiones autónoma (basada en reglas) y la mitigación de falsos positivos/negativos.</li>
-                                                <li>Comprender el código Python de ejemplo generado por Xolo para esta misión, incluyendo operadores lógicos (`and`/`or`) para rangos.</li>
-                                            </ul>
-                                        </li>
-                                        <li><strong>Preparación de la Demostración Práctica:</strong>
-                                            <ul>
-                                                <li>Tener un Micro:bit con IOTbit y BME280 programado con una alerta local (sonido/luz) al superar un umbral de temperatura para una demostración inicial si es necesario.</li>
-                                            </ul>
-                                        </li>
+                                        <li><strong>Familiarización Conceptual y Técnica:</strong> Repasar el concepto de Edge Computing y la lógica de umbrales. Estar preparado para guiar a los estudiantes en el uso de `print()` para la depuración de sensores.</li>
+                                        <li><strong>Preparación de la Demostración Práctica:</strong> Tener una versión funcional de la "alerta de invernadero" lista para demostrar. Sería útil tener una fuente de calor o frío (como una taza de té caliente o una botella de agua fría) para manipular fácilmente las lecturas del sensor y probar los umbrales en vivo.</li>
                                     </ol>
                                 </td>
                             </tr>
@@ -135,29 +117,29 @@
 
             <div class="activity-card" id="activity-1">
                 <h2>⚡ Actividad 1: Saludo de IA y Contexto ⏰ 3 minutos</h2>
-                <p>Establecer el tono profesional, activar la personalización de la IA y presentar la misión del día.</p>
+                <p>Establecer el tono de una sesión práctica y presentar el concepto de acción local (Edge Computing).</p>
                 <div class="steps">
                     <div class="step-card">
                         <div class="step-content">
-                            <h3>Paso 1: Bienvenida e Introducción a la Misión</h3>
-                            <p>(Proyectar Diapositiva 2) El facilitador da la bienvenida y presenta el enfoque estratégico de la misión del día.</p>
+                            <h3>Paso 1: Bienvenida y Contexto del Desafío</h3>
+                            <p>(Proyectar Diapositiva 2) El facilitador da la bienvenida y enmarca la sesión como un desafío de autonomía del sistema.</p>
                         </div>
                         <div class="collapsible">
                             <button type="button" class="collapsible-button">Diálogo Sugerido</button>
                             <div class="collapsible-content">
-                                <p class="dialogue assistant">"Buenos días, equipo. Conectaron su estación meteorológica a la nube. Hoy, sin embargo, nos enfocaremos en la inmediatez. Sus Micro:bits 'gritarán' una alerta local al detectar un problema, sin depender de internet. Usaremos el BME280 para construir un sistema de alerta de invernadero autónomo, reaccionando a umbrales de temperatura y humedad."</p>
+                                <p class="dialogue assistant">Buenos días, desarrolladores. En la misión anterior, enviamos datos a la nube para que un humano los viera. Pero, ¿qué pasa si nadie está mirando? ¿O si se cae la conexión a internet? Un sistema verdaderamente robusto debe poder actuar por sí mismo. Hoy, construirán un sistema que toma decisiones localmente.</p>
                             </div>
                         </div>
                     </div>
-                      <div class="step-card">
+                    <div class="step-card">
                         <div class="step-content">
                             <h3>Paso 2: Activación y Personalización de Xolo</h3>
-                            <p>El facilitador guía a los alumnos para que inicien su sesión de trabajo **individual**, proporcionando a Xolo la información necesaria para la personalización.</p>
+                            <p>El facilitador guía a los alumnos para que inicien su sesión de trabajo individual con Xolo.</p>
                         </div>
                         <div class="collapsible">
                             <button type="button" class="collapsible-button">Diálogo Sugerido</button>
                             <div class="collapsible-content">
-                                <p class="dialogue assistant">"Para iniciar, de forma **individual**, abran su interfaz de Xolo y salúdenlo. Incluyan su **perfil de aprendizaje** y un **interés personal actual**. Ejemplo: <strong>'Hola Xolo, soy [Tu Nombre], perfil [Ingeniero], y pienso en cómo los sistemas de control de temperatura en servidores evitan sobrecalentamientos críticos. Listo.'</strong> Confirmen haber recibido su saludo."</p>
+                                <p class="dialogue assistant">Inicien su sesión con Xolo como siempre, actualizándolo con su perfil de aprendizaje e interés. Por ejemplo: <strong>'Hola Xolo, soy David, perfil Ingeniero, y mi interés es la fiabilidad de los sistemas. Listo para el Desafío 6.5.'</strong></p>
                             </div>
                         </div>
                     </div>
@@ -165,30 +147,30 @@
             </div>
 
             <div class="activity-card" id="activity-2">
-                <h2>⚡ Actividad 2: "I Can Statement" y Presentación del Desafío ⏰ 7 minutos</h2>
-                <p>Clarificar las metas de aprendizaje y presentar el desafío técnico y conceptual del día.</p>
+                <h2>⚡ Actividad 2: A.I. GYM (Edge Computing y Umbrales) ⏰ 7 minutos</h2>
+                <p>Reforzar los conceptos clave de procesamiento local y lógica de umbrales.</p>
                 <div class="steps">
                     <div class="step-card">
                         <div class="step-content">
-                            <h3>Paso 1: Presentación del Desafío Conceptual y Técnico</h3>
-                            <p>(Proyectar Diapositiva 3) El facilitador introduce el concepto o la herramienta central de la sesión, contextualizando su relevancia profesional.</p>
+                            <h3>Paso 1: Instrucción para el Repaso Estratégico</h3>
+                            <p>(Proyectar Diapositiva 3) El facilitador dirige a los alumnos para que investiguen los conceptos clave del día.</p>
                         </div>
                         <div class="collapsible">
                             <button type="button" class="collapsible-button">Diálogo Sugerido</button>
                             <div class="collapsible-content">
-                                <p class="dialogue assistant">"Hoy la inmediatez es clave. Exploraremos los 'umbrales' como puntos de decisión para acciones autónomas en el dispositivo. Esto es vital en escenarios sin conectividad a la nube, como en servidores, viveros exóticos, o laboratorios químicos. Sus Micro:bits serán 'guardianes ambientales' de respuesta rápida."</p>
+                                <p class="dialogue assistant">Antes de comenzar el desafío, hagamos un repaso táctico. De forma individual, investiguen con Xolo. Usen este prompt: <strong>'Xolo, explícame qué es "Edge Computing" y por qué es importante. Luego, explica el concepto de "umbral" (threshold) en un sistema de alerta.'</strong></p>
                             </div>
                         </div>
                     </div>
-                    <div class="step-card">
+                     <div class="step-card">
                         <div class="step-content">
-                            <h3>Paso 2: "I Can Statement"</h3>
-                            <p>(Proyectar Diapositiva 4) El facilitador presenta el objetivo de aprendizaje de la sesión en un formato claro y orientado a la competencia.</p>
+                            <h3>Paso 2: Discusión y Síntesis Rápida</h3>
+                            <p>El facilitador modera una breve discusión para asegurar la comprensión.</p>
                         </div>
                         <div class="collapsible">
                             <button type="button" class="collapsible-button">Diálogo Sugerido</button>
                             <div class="collapsible-content">
-                                <p class="dialogue assistant">"Al finalizar, podrán: <strong>'Diseñar e implementar un sistema de alerta local con sensor BME280, programar umbrales numéricos para temperatura/humedad que activen sonido/luz, y conceptualizar la importancia de alertas locales y umbrales en decisiones autónomas.'</strong>"</p>
+                                <p class="dialogue assistant">(Tras unos minutos) "Rápidamente, ¿cuáles son las dos ventajas clave del Edge Computing? (Esperar respuesta: 'velocidad', 'fiabilidad'). ¿Y qué es un umbral? (Esperar respuesta: 'un valor límite para tomar una decisión'). Excelente, tienen los conceptos. Vamos al desafío."</p>
                             </div>
                         </div>
                     </div>
@@ -196,30 +178,42 @@
             </div>
 
             <div class="activity-card" id="activity-3">
-                <h2>⚡ Actividad 3: A.I. GYM (Aprendizaje Individual) ⏰ 10 minutos</h2>
-                <p>Facilitar un aprendizaje personalizado e individual con Xolo para comprender umbrales, alertas locales y toma de decisiones autónoma.</p>
+                 <h2>⚡ Actividad 3: Brain Spark (Desafío de Alerta Inteligente) ⏰ 25 minutos</h2>
+                <p>Los estudiantes diseñan, implementan y depuran un sistema de alerta autónomo en parejas.</p>
                 <div class="steps">
                     <div class="step-card">
                         <div class="step-content">
-                            <h3>Paso 1: Instrucción para el Aprendizaje Estratégico</h3>
-                            <p>(Proyectar Diapositiva 5) El facilitador dirige a los alumnos para que inicien su aprendizaje **individual** con Xolo.</p>
+                            <h3>Paso 1: Presentación del Desafío y Formación de Parejas</h3>
+                             <p>(Proyectar Diapositiva 4) El facilitador presenta el escenario del desafío e instruye la formación de parejas.</p>
                         </div>
                         <div class="collapsible">
                             <button type="button" class="collapsible-button">Diálogo Sugerido</button>
                             <div class="collapsible-content">
-                                <p class="dialogue assistant">"Iniciamos el A.I. GYM. De forma **individual**, formulen a Xolo: <strong>'Xolo, explícame en detalle qué son los umbrales en un sistema de sensores, cómo se usan para activar alertas locales inmediatas, y por qué esta toma de decisiones autónoma (basada en reglas) en el dispositivo es crucial en escenarios sin conectividad a la nube o IA remota.'</strong> Presten atención a la explicación de autonomía y respuesta local."</p>
+                                <p class="dialogue assistant">Ahora, el desafío práctico. En parejas, su misión es diseñar e implementar un sistema de alerta inteligente, como por ejemplo, para un invernadero. El sistema debe monitorear el ambiente y activar una alarma local si las condiciones salen de un rango óptimo. Ustedes definirán los umbrales.</p>
                             </div>
                         </div>
                     </div>
                     <div class="step-card">
                         <div class="step-content">
-                            <h3>Paso 2: Análisis y Profundización Conceptual</h3>
-                            <p>(Proyectar Diapositiva 6) El facilitador modera una breve discusión grupal para sintetizar los hallazgos individuales del A.I. GYM y propone preguntas para que los alumnos profundicen con Xolo.</p>
+                            <h3>Paso 2: Diseño de la "Vibe" y Generación de Código</h3>
+                            <p>(Proyectar Diapositiva 5) Las parejas definen su 'vibe' y colaboran con Xolo para obtener el código.</p>
                         </div>
                         <div class="collapsible">
                             <button type="button" class="collapsible-button">Diálogo Sugerido</button>
                             <div class="collapsible-content">
-                                <p class="dialogue assistant">"Ahora, analicen las explicaciones de Xolo. Si algo no les queda claro, pídanle que profundice. Por ejemplo: <strong>'Xolo, ¿qué es un umbral y cómo funciona la lógica condicional?'</strong> o <strong>'¿Cuáles son las ventajas de la inmediatez en alertas locales (latencia cero, resiliencia, eficiencia energética)?'</strong> Presten atención a: <strong>'¿Por qué Edge Computing es crucial para seguridad y ubicaciones remotas?'</strong>"</p>
+                                 <p class="dialogue assistant">Discutan y definan su lógica. Luego, describan la 'vibe' completa a Xolo. Sean precisos. Por ejemplo: <strong>'Xolo, vibe de alerta de invernadero: si la temperatura supera los 28 grados O la humedad cae por debajo del 60%, encender un LED rojo. Si no, encender un LED verde.'</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 3: Análisis y Depuración de Umbrales</h3>
+                             <p>(Proyectar Diapositiva 6) Las parejas analizan el código y aprenden a usar `print()` para depurar.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                 <p class="dialogue assistant">Analicen el código. Fíjense en cómo se definen los umbrales como variables. ¿Qué ventajas tiene esto? Al probar, si la alarma se activa inesperadamente, ¿cómo pueden saber si es un error lógico o si las condiciones ambientales reales están activándola? La respuesta es usar `print()`. Añadan `print("Temp:", temp, "Hum:", hum)` dentro del bucle para ver los datos reales en la consola. Esto es crucial para depurar. Consulten a Xolo si necesitan ayuda con la sintaxis de `print()`."</p>
                             </div>
                         </div>
                     </div>
@@ -227,208 +221,45 @@
             </div>
 
             <div class="activity-card" id="activity-4">
-                 <h2>⚡ Actividad 4: Brain Spark (Trabajo en Equipo) ⏰ 22 minutos</h2>
-                <p>El facilitador supervisa la ejecución del "Flujo de Creación Aumentada" en equipos, desde el diseño hasta la implementación.</p>
+                <h2>⚡ Actividad 4: Gnius STORM (Reflexión sobre Sistemas Autónomos) ⏰ 5 minutos</h2>
+                <p>El facilitador modera una reflexión final enfocada en el diseño y los riesgos de los sistemas autónomos.</p>
                 <div class="steps">
                     <div class="step-card">
                         <div class="step-content">
-                            <h3>Paso 1: Formación de Equipos e Instrucción</h3>
-                            <p>(Proyectar Diapositiva 7) El facilitador instruye a los alumnos a formar sus equipos de trabajo para el resto de la sesión.</p>
+                            <h3>Paso 1: Gnius STORM (Think - Individual)</h3>
+                            <p>(Proyectar Diapositiva 7) Los alumnos reflexionan individualmente sobre cómo mejorar su sistema.</p>
                         </div>
                         <div class="collapsible">
                             <button type="button" class="collapsible-button">Diálogo Sugerido</button>
                             <div class="collapsible-content">
-                                <p class="dialogue assistant">"Han profundizado en la importancia de alertas locales. Ahora, aplicaremos este concepto. Formen sus equipos de proyecto de **2 personas**. Construirán un sistema de alerta de invernadero con sensor BME280 y su Micro:bit (IOTbit). Esta misión se enfoca en la inmediatez."</p>
+                                <p class="dialogue assistant">Bien, vamos a cerrar. Primero, un minuto de reflexión individual. Piensen: ¿Qué otros factores o sensores añadirían a su sistema de invernadero para hacerlo aún más inteligente y robusto?</p>
                             </div>
                         </div>
                     </div>
                     <div class="step-card">
                         <div class="step-content">
-                            <h3>Paso 2: Ideación y Definición de la "Vibe" en Equipo</h3>
-                            <p>El equipo diseña una intención para una "Alerta de Invernadero Inteligente" con BME280, definiendo rangos seguros y acciones de alerta, describiéndola a Xolo.</p>
+                            <h3>Paso 2: Gnius STORM (Pair - Parejas)</h3>
+                            <p>Los alumnos discuten en parejas los riesgos asociados a los umbrales.</p>
                         </div>
                         <div class="collapsible">
                             <button type="button" class="collapsible-button">Diálogo Sugerido</button>
                             <div class="collapsible-content">
-                                <p class="dialogue assistant">"Su misión es diseñar una 'vibe' para una 'Alerta de Invernadero Inteligente'. El Micro:bit leerá temperatura y humedad con BME280. Definan un 'rango seguro' (ej. Temp 20-28°C, Hum 60-80%). Si los valores *salen* de este rango, el buzzer (P0) debe sonar y LED rojo (P8) parpadear. Si están *dentro* del rango, LED azul (P1) fijo y pantalla 'CHECK'. Describan su idea a Xolo, incluyendo umbrales y acciones. Ejemplo de input a Xolo: <strong>'Xolo, queremos un 'Control de Ambiente para Plantas Exóticas'. Rango seguro Temp 20-28°C, Hum 60-80%. Fuera de rango: buzzer P0 suena, LED rojo P8 parpadea. Dentro de rango: LED azul P1 fijo, pantalla 'CHECK'. Verificar cada 2 segundos.'</strong>"</p>
-                            </div>
-                        </div>
-                    </div>
-                     <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 3: Generación de Código por IA</h3>
-                            <p>(Proyectar Diapositiva 8) Xolo genera el esqueleto de código Python para el sistema de monitoreo ambiental con alerta local.</p>
-                        </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                <p class="dialogue assistant">"Xolo generará el esqueleto de código Python. Lo que se muestra a continuación es el tipo de código que Xolo generaría para esta lógica. Su tarea es analizarlo."</p>
-<pre>
-# Importaciones necesarias
-
-from microbit import *
-from machine import Pin, I2C
-import time
-from iotit import * # Para usar botones y display, y Pin.P0, P1, P8
-from bme280_i2c import BME280 # Asegúrense que el archivo de la librería está en su Micro:bit
-
-# --- Configuración del bus I2C y el sensor BME280 ---
-# I2C(ID, SCL, SDA, FREQ) -- Pines de I2C en Micro:bit son P19 (SCL) y P20 (SDA)
-i2c = I2C(1, scl=Pin(19), sda=Pin(20), freq=400000)
-bme = BME280(i2c=i2c, address=0x76) # O 0x77 si no funciona 0x76
-
-# Definir pines para LEDs y Buzzer
-buzzer = Pin(Pin.P0, Pin.OUT) # Buzzer en P0
-led_azul = Pin(Pin.P1, Pin.OUT) # LED azul en P1 (indicador OK)
-led_rojo = Pin(Pin.P8, Pin.OUT) # LED rojo en P8 (indicador ALERTA)
-
-# --- Definición de Umbrales de Seguridad ---
-TEMP_MIN = 20.0
-TEMP_MAX = 28.0
-HUM_MIN = 60.0
-HUM_MAX = 80.0
-
-# --- Función de Configuración Inicial ---
-def setup_sistema():
-    display.scroll("Alerta Invernadero ON")
-    buzzer.write_digital(0) # Asegurar que el buzzer esté apagado al inicio
-    led_azul.write_digital(0) # Apagar LEDs al inicio
-    led_rojo.write_digital(0)
-    time.sleep(1)
-    display.clear()
-
-# Ejecutar configuración
-setup_sistema()
-
-# --- Bucle principal de monitoreo ---
-while True:
-    # Limpiar datos anteriores de display
-    display.clear()
-    led_azul.write_digital(0)
-    led_rojo.write_digital(0)
-    buzzer.write_digital(0)
-    # Leer los datos del sensor BME280
-    try:
-        temperatura = float(bme.read_temperature().strip('C'))
-        humedad = float(bme.read_humidity().strip('%'))
-        presion = float(bme.read_pressure().strip('hPa')) # No se usa directamente para alerta, pero se lee
-    except ValueError as e:
-        print("Error al leer/convertir sensor:", e)
-        display.show(Image.SAD) # Mostrar error visual
-        time.sleep(2)
-        continue # Saltar esta iteración y probar de nuevo
-    # Imprimir lecturas para depuración en la consola serial (opcional, muy útil)
-    print(f"Temp: {temperatura}°C, Hum: {humedad}%, Pres: {presion}hPa")
-    # --- Lógica de Alerta de Umbrales ---
-    # Condición de ALERTA: Si la temperatura o la humedad están FUERA de su rango seguro
-    if (temperatura < TEMP_MIN or temperatura > TEMP_MAX or \
-        humedad < HUM_MIN or humedad > HUM_MAX):
-
-        display.show(Image.ANGRY) # Icono de alerta
-        print("¡ALERTA AMBIENTAL! Valores fuera de rango.")
-
-        # Activar alarma local (parpadeo rápido de LED rojo y sonido intermitente del buzzer)
-        for _ in range(5): # 5 parpadeos/sonidos
-            led_rojo.write_digital(1)
-            buzzer.write_digital(1)
-            time.sleep_ms(100)
-            led_rojo.write_digital(0)
-            buzzer.write_digital(0)
-            time.sleep_ms(100)
-
-    # Condición de NORMALIDAD: Si AMBAS temperatura y humedad están DENTRO de su rango seguro
-    elif (temperatura >= TEMP_MIN and temperatura <= TEMP_MAX and \
-          humedad >= HUM_MIN and humedad <= HUM_MAX):
-
-        display.show(Image.HAPPY) # Icono de OK
-        led_azul.write_digital(1) # Encender LED azul fijo
-        print("Condiciones ambientales OK.")
-    else: # Este else cubriría casos donde no se cumple ninguna de las anteriores (ej. rangos solapados, errores de lectura)
-        display.show(Image.QUESTION)
-        print("Estado ambiental desconocido o no categorizado.")
-
-    time.sleep(2) # Esperar 2 segundos antes de la siguiente lectura/evaluación
-</pre>
-<p><em><!-- NOTA PARA EL FACILITADOR: Este es el código que Xolo generará para el equipo. No debe ser leído directamente a la clase, sino usado como referencia para la siguiente fase de análisis. --></em></p>
-                            </div>
-                        </div>
-                    </div>
-                     <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 4: Análisis de Código Guiado ("Taming the Genie Lvl 2")</h3>
-                            <p>(Proyectar Diapositiva 9) El equipo analiza el código generado por Xolo, profundizando en su estructura y lógica.</p>
-                        </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                <p class="dialogue assistant">"Analicen el código. Pregúntenle a Xolo: <strong>'¿Cuáles son las implicaciones de diseñar umbrales exactos (TEMP_MIN/MAX, HUM_MIN/MAX) en la fiabilidad del sistema de alerta? ¿Cómo afectan los 'falsos positivos' y 'falsos negativos'?'</strong> También: <strong>'¿Por qué es crucial `or` en la condición de ALERTA, y `and` en la de NORMALIDAD?'</strong>"</p>
+                                <p class="dialogue assistant">Ahora, en parejas, discutan los riesgos de establecer umbrales incorrectos en un sistema real. ¿Qué pasaría en un sistema médico o industrial si un umbral está mal calibrado? Tienen dos minutos.</p>
                             </div>
                         </div>
                     </div>
                     <div class="step-card">
                         <div class="step-content">
-                            <h3>Paso 5: Implementación y Debugging Colaborativo</h3>
-                            <p>(Proyectar Diapositiva 10) El equipo implementa el código en el Micro:bit y depura posibles errores con la asistencia de Xolo.</p>
+                            <h3>Paso 3: Gnius STORM (Share & Synthesis)</h3>
+                            <p>Algunas parejas comparten sus ideas y el facilitador cierra la sesión.</p>
                         </div>
                         <div class="collapsible">
                             <button type="button" class="collapsible-button">Diálogo Sugerido</button>
                             <div class="collapsible-content">
-                                <p class="dialogue assistant">"Ensamblen su sistema de alerta. Conecten BME280 a pines I2C, buzzer a P0, LED azul a P1, LED rojo a P8. Asegúrense de que `bme280_i2c.py` esté cargado. Copien el código y ajusten umbrales. Carguen y prueben simulando temperaturas/humedades altas/bajas. Si se queda siempre en 'ALERTA', pregunten a Xolo: <strong>'¿Por qué el Micro:bit se queda en 'ALERTA' incluso en condiciones normales?'</strong> Si nunca entra en 'ALERTA', pregunten: <strong>'¿Por qué el sistema nunca entra en 'ALERTA'?'</strong> La fiabilidad es clave."</p>
+                                <p class="dialogue assistant">Escuchemos de algunas parejas. Compartan una mejora que le harían a su sistema. (Escuchar 2-3 respuestas). Excelente. Hoy han cerrado el bucle de percepción-acción. Sus dispositivos ahora son autónomos: comprenden su entorno y reaccionan a él sin intervención humana. Esta capacidad es el corazón de la robótica y la automatización. Han dominado la lógica de umbrales, una habilidad fundamental. Prepárense para explorar sensores aún más especializados en las próximas misiones.</p>
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-
-            <div class="activity-card" id="activity-5">
-                <h2>⚡ Actividad 5: Gnius STORM (Reflexión en Equipo) ⏰ 5 minutos</h2>
-                <p>El facilitador modera la presentación de resultados y una reflexión final enfocada en el proceso colaborativo.</p>
-                <div class="steps">
-                    <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 1: "Think" (Individual)</h3>
-                            <p>Instrucción para la reflexión individual sobre el proceso de aprendizaje.</p>
-                        </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                <p class="dialogue assistant">"Individualmente, piensen: 'Imaginen un sistema de alerta en un hospital o planta nuclear. ¿Cuál sería el mayor riesgo de un falso positivo/negativo? ¿Cómo la IA podría mitigar errores en sistemas de monitoreo críticos?'"</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 2: "Pair" (Parejas)</h3>
-                            <p>Instrucciones para la discusión en parejas.</p>
-                        </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <p class="dialogue assistant">"Ahora, discutan sus reflexiones con su compañero. Comparen riesgos de falsos positivos/negativos. ¿Qué estrategias de IA ven prometedoras para mejorar la fiabilidad de las alertas?"</p>
-                            </div>
-                        </div>
-                    <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 3: "Share" (Grupo)</h3>
-                            <p>El facilitador invita a algunos equipos a compartir sus conclusiones con la clase.</p>
-                        </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <p class="dialogue assistant">"Algunos equipos, compartan sus conclusiones más interesantes. ¿Qué visión tienen sobre la fiabilidad en sistemas de alerta de IA?"</p>
-                            <p class="dialogue user"><strong>Equipo 1 (Hospital):</strong> "Un falso positivo causaría 'fatiga de alarma'. Un falso negativo sería fatal. La IA podría aprender patrones de 'ruido' vs. 'falla real' para reducir errores."</p>
-                            <p class="dialogue user"><strong>Equipo 2 (Planta Nuclear):</strong> "Un falso positivo causaría evacuación masiva. Un falso negativo sería una catástrofe. La IA podría usar 'datos sintéticos' y 'fusión de datos' para detección y confirmación."</p>
-                            <p class="dialogue user"><strong>Equipo 3 (Agricultura):</strong> "Un falso positivo causaría fumigación innecesaria. Un falso negativo arruinaría la cosecha. La IA podría usar visión por computadora y análisis de tendencias para confirmar plagas."</p>
-                            </div>
-                        </div>
-                    <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 4: Síntesis Final</h3>
-                            <p>El facilitador cierra la sesión con una reflexión consolidada sobre el aprendizaje del día.</p>
-                        </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <p class="dialogue assistant">"Felicidades, equipo. Construyeron un sistema de alerta local, vital para autonomía. Experimentaron la tensión entre inmediatez y fiabilidad. Comprendieron cómo los umbrales definen el comportamiento. Las discusiones sobre falsos positivos/negativos muestran madurez en ingeniería de sistemas críticos. Han aplicado umbrales y toma de decisiones autónoma en el borde, esencial para seguridad y resiliencia. La IA, en sus formas avanzadas, va más allá de umbrales fijos, 'aprendiendo' patrones para detectar anomalías con sutileza. La próxima sesión explorará otros sensores para monitorear calidad atmosférica y sonora, enriqueciendo su entorno."</p>
-                            </div>
-                        </div>
                 </div>
             </div>
         </main>
